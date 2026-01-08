@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
+/* Optional: Marker fix for Next.js */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
