@@ -2,20 +2,13 @@
 interface CardProps {
   title: string;
   value: string | number;
-  color?: string;
+  color?: "primary" | "secondary" | "accent" | "info" | "success" | "warning" | "error";
 }
 
-export default function Card({ title, value, color = "blue" }: CardProps) {
-  const colorMap: Record<string, string> = {
-    blue: "bg-blue-100 text-blue-800",
-    green: "bg-green-100 text-green-800",
-    red: "bg-red-100 text-red-800",
-    yellow: "bg-yellow-100 text-yellow-800",
-  };
-
+export default function Card({ title, value, color = "primary" }: CardProps) {
   return (
-    <div className={`p-4 rounded shadow ${colorMap[color]}`}>
-      <h3 className="font-semibold">{title}</h3>
+    <div className={`card bg-${color} text-white shadow-lg p-4`}>
+      <h3 className="font-semibold text-lg">{title}</h3>
       <p className="text-2xl font-bold">{value}</p>
     </div>
   );
