@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Saidur Rahman",
+    "email": "syadur.pstu@gmail.com",
+    "service": "Disaster Risk Analysis",
+    "message": "ttt",
+    "submittedAt": "2026-01-11T19:05:58.868Z"
+  },
+  {
+    "id": 2,
+    "name": "Javed",
+    "email": "syadur.pstu@gmail.com",
+    "service": "Disaster Risk Analysis",
+    "message": "test",
+    "submittedAt": "2026-01-11T19:06:16.203Z"
+  }
+]

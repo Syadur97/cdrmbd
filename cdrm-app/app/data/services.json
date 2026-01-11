@@ -2,19 +2,43 @@
   {
     "id": 1,
     "title": "Disaster Risk Analysis",
+    "slug": "disaster-risk-analysis",
     "description": "We provide detailed hazard assessments and vulnerability analysis to reduce risks.",
-    "image": "https://img.daisyui.com/stock/photo-1581091012184-0f8a1a5bb6d5.jpg"
+    "details": "Our Disaster Risk Analysis service helps governments, NGOs, and development partners understand and mitigate disaster risks. We conduct multi-hazard assessments covering floods, cyclones, earthquakes, landslides, and climate-induced risks. Using both quantitative and qualitative methods, we analyze exposure, vulnerability, and capacity at community and institutional levels. The findings support evidence-based planning, risk-informed development, and climate adaptation strategies.",
+    "features": [
+      "Multi-hazard risk assessment",
+      "Community vulnerability analysis",
+      "Climate risk integration",
+      "Policy and planning support"
+    ],
+    "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
   },
   {
     "id": 2,
     "title": "GIS & Mapping Solutions",
+    "slug": "gis-mapping-solutions",
     "description": "Using the latest GIS technology, we create interactive maps for decision-making.",
-    "image": "https://img.daisyui.com/stock/photo-1603791440384-56cd371ee9a7.jpg"
+    "details": "Our GIS & Mapping Solutions transform complex spatial data into actionable insights. We develop interactive maps, spatial databases, and dashboards for disaster preparedness, urban planning, and climate resilience. Our solutions integrate satellite imagery, drone data, and field surveys to support real-time decision-making and risk visualization.",
+    "features": [
+      "Interactive web maps",
+      "Risk & hazard mapping",
+      "Spatial data analysis",
+      "Dashboard development"
+    ],
+    "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=1200&auto=format&fit=crop"
   },
   {
     "id": 3,
     "title": "Training & Capacity Building",
+    "slug": "training-capacity-building",
     "description": "We conduct workshops and training sessions to empower local communities.",
-    "image": "https://img.daisyui.com/stock/photo-1573497163690-4cbf98b8e5f2.jpg"
+    "details": "Our Training & Capacity Building programs strengthen institutional and community capacities for disaster risk reduction and climate adaptation. We design and deliver customized training modules, simulations, and workshops for government officials, humanitarian actors, and community leaders. Our approach emphasizes inclusivity, practical learning, and sustainability.",
+    "features": [
+      "Customized training modules",
+      "Simulation & drills",
+      "Inclusive DRR approaches",
+      "Training of Trainers (ToT)"
+    ],
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
   }
 ]

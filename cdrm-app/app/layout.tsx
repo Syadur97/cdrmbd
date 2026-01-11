@@ -1,5 +1,6 @@
 // app/layout.tsx
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
 
         {/* Page content */}
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 min-h-screen bg-gradient-to-br from-primary/15 via-base-100 to-secondary/15 animate-bg">{children}</main>
 
         {/* Footer included once */}
         <Footer />
