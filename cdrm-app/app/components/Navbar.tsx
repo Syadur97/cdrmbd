@@ -5,56 +5,67 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-        tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><Link href="/">Home</Link></li>
-          <li><Link href="/dashboard">Dashboard</Link></li>
-          <li><Link href="/map">Map</Link></li>
-          <li><Link href="/plans">Plans</Link></li>
-          <li><Link href="/reports">Reports</Link></li>
-      </ul>
-    </div>
-    <a className="btn btn-ghost text-xl">Consultancy Co.</a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><Link href="/">Home</Link></li>
-          <li><Link href="/dashboard">Dashboard</Link></li>
-          <li><Link href="/map">Map</Link></li>
-          <li><Link href="/plans">Plans</Link></li>
-          <li><Link href="/reports">Reports</Link></li>
-    </ul>
-  </div>
-  <div className="navbar-end">
-   <div className="dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+    <header className="sticky top-0 z-50 bg-white border-b">
+
+      {/* ===== TOP NAVBAR ===== */}
+      <div className="flex items-center justify-between px-4 lg:px-8 h-16">
+
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <span className="text-xl font-bold tracking-tight">
+            iied
+          </span>
+          <span className="hidden sm:block text-sm leading-tight text-gray-700">
+            International Institute<br />for Environment and Development
+          </span>
+        </div>
+
+        {/* Main Navigation */}
+        <nav className="hidden lg:flex items-center gap-8 text-base font-medium">
+          <Link href="/about" className="hover:underline">About</Link>
+          <Link href="/map" className="hover:underline">Map</Link>
+          <Link href="/news" className="hover:underline">News and insight</Link>
+          <Link href="/approach" className="hover:underline">Our approach</Link>
+          <Link href="/publications" className="hover:underline">Publications</Link>
+        </nav>
+
+        {/* Icons */}
+        <div className="flex items-center gap-4">
+          <button aria-label="Search">
+            🔍
+          </button>
+          <button className="lg:hidden" aria-label="Menu">
+            ☰
+          </button>
         </div>
       </div>
-      <ul
-        tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+      {/* ===== SECOND ROW: SCROLLABLE TOPICS ===== */}
+      <div className="relative border-t bg-gray-50">
+        <div className="flex items-center gap-2 px-4 lg:px-8 overflow-x-auto scrollbar-hide h-14">
+
+          {[
+            "Food and agriculture",
+            "Sustainable markets",
+            "Policy and planning",
+            "Forests",
+            "Governance",
+            "Communication",
+            "Economics",
+            "Poverty",
+            "Monitoring",
+          ].map((item) => (
+            <Link
+              key={item}
+              href="#"
+              className="whitespace-nowrap rounded-full border px-4 py-2 text-sm hover:bg-gray-100"
+            >
+              {item}
+            </Link>
+          ))}
+        </div>
+      </div>
+
+    </header>
   );
 }

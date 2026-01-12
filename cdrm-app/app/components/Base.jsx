@@ -1,39 +1,87 @@
-"use client";
-
-export default function Base() {
+export default function HomePage() {
   return (
-    <section className="min-h-screen bg-base-100">
-      <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row w-full max-w-7xl gap-10">
-          
-          {/* LEFT: Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left lg:pl-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Consultancy Co.
-            </h1>
+    <main className="bg-white">
 
-            <p className="mb-6 text-base md:text-lg">
-              Delivering data-driven disaster risk management, GIS solutions,
-              and decision-support systems for resilient communities.
-            </p>
+      {/* ===== HERO SECTION ===== */}
+      <section className="max-w-5xl mx-auto px-4 pt-20 pb-16 text-center">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium leading-tight">
+          IIED is an independent research organisation that delivers
+          positive change on a global scale
+        </h1>
 
-            <div className="flex justify-center lg:justify-start gap-4">
-              <button className="btn btn-primary">Get Started</button>
-              <button className="btn btn-outline">Learn More</button>
-            </div>
-          </div>
-
-          {/* RIGHT: Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp"
-              alt="Consultancy"
-              className="rounded-xl shadow-lg w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
-            />
-          </div>
-
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <button className="rounded-full border px-6 py-2 text-sm hover:bg-gray-100">
+            What we do
+          </button>
+          <button className="rounded-full border px-6 py-2 text-sm hover:bg-gray-100">
+            How we work
+          </button>
+          <button className="rounded-full border px-6 py-2 text-sm hover:bg-gray-100">
+            See our impact
+          </button>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ===== FEATURED CONTENT ===== */}
+      <section className="max-w-7xl mx-auto px-4 pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+          {/* Large Feature Card */}
+          <article className="lg:col-span-2 rounded-xl overflow-hidden border">
+            <img
+              src="https://images.unsplash.com/photo-1581091870627-3f9c8a7f0c19"
+              alt="Article"
+              className="h-72 w-full object-cover"
+            />
+            <div className="p-6">
+              <span className="inline-block mb-3 rounded-md bg-cyan-600 px-3 py-1 text-xs text-white">
+                Article
+              </span>
+              <h2 className="text-2xl font-serif leading-snug">
+                Supporting women-led digital innovation in rural communities
+              </h2>
+            </div>
+          </article>
+
+          {/* Right Column Cards */}
+          <div className="space-y-8">
+
+            <article className="rounded-xl overflow-hidden border">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Insight"
+                className="h-40 w-full object-cover"
+              />
+              <div className="p-5">
+                <span className="inline-block mb-2 rounded-md bg-cyan-600 px-3 py-1 text-xs text-white">
+                  Article
+                </span>
+                <h3 className="text-lg font-serif leading-snug">
+                  IIED's best of 2025: insights
+                </h3>
+              </div>
+            </article>
+
+            <article className="rounded-xl overflow-hidden border">
+              <img
+                src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"
+                alt="Insight"
+                className="h-40 w-full object-cover"
+              />
+              <div className="p-5">
+                <span className="inline-block mb-2 rounded-md bg-cyan-600 px-3 py-1 text-xs text-white">
+                  Insight
+                </span>
+                <h3 className="text-lg font-serif leading-snug">
+                  Putting pledges into practice: what did COP30 mean for climate funds?
+                </h3>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
   );
 }
