@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="h-1 bg-gradient-to-r from-green-400 via-yellow-400 to-pink-400" />
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 lg:px-20 py-10">
 
         {/* Link Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
@@ -87,7 +87,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-6 flex flex-col md:flex-row md:justify-between gap-4 text-sm">
+        <div className="max-w-7xl mx-auto px-4 lg:px-10 py-6 flex flex-col md:flex-row md:justify-between gap-4 text-sm">
           <p>© 2026 International Institute for Environment and Development (IIED)</p>
 
           <div className="flex flex-wrap gap-4">

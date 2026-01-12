@@ -8,7 +8,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b">
 
       {/* ===== TOP NAVBAR ===== */}
-      <div className="flex items-center justify-between px-4 lg:px-8 h-16">
+      <div className="flex items-center justify-between px-4 lg:px-30 h-16">
 
         {/* Logo */}
         <div className="flex items-center gap-2">
