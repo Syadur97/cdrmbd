@@ -23,7 +23,7 @@ export default function Navbar() {
         {/* Main Navigation */}
         <nav className="hidden lg:flex items-center gap-8 text-base font-medium">
           <Link href="/about" className="hover:underline">About</Link>
-          <Link href="/map" className="hover:underline">Map</Link>
+          <Link href="/map" className="hover:underline">Services</Link>
           <Link href="/news" className="hover:underline">News and insight</Link>
           <Link href="/approach" className="hover:underline">Our approach</Link>
           <Link href="/publications" className="hover:underline">Publications</Link>
