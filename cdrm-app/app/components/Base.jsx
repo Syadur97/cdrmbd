@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <main className="bg-white">
@@ -28,19 +30,27 @@ export default function HomePage() {
 
           {/* Large Feature Card */}
           <article className="lg:col-span-2 rounded-xl overflow-hidden border">
-            <img
-              src="https://i.ibb.co.com/5zDWdzB/Chat-GPT-Image-Jan-13-2026-11-39-44-AM.png"
-              alt="Article"
-              className="h-72 w-full object-cover"
-            />
-            <div className="p-6">
-              <span className="inline-block mb-3 rounded-md bg-cyan-600 px-3 py-1 text-xs text-white">
-                Article
-              </span>
-              <h2 className="text-2xl font-serif leading-snug">
-                Supporting women-led digital innovation in rural communities
-              </h2>
-            </div>
+            <Link
+      href="/articles/supporting-women-led-digital-innovation"
+      className="block rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+    >
+      {/* Image */}
+      <img
+        src="https://i.ibb.co.com/5zDWdzB/Chat-GPT-Image-Jan-13-2026-11-39-44-AM.png"
+        alt="Article"
+        className="h-72 w-full object-cover"
+      />
+
+      {/* Content */}
+      <div className="p-6 bg-white">
+        <span className="inline-block mb-3 rounded-md bg-cyan-600 px-3 py-1 text-xs text-white">
+          Article
+        </span>
+        <h2 className="text-2xl font-serif leading-snug">
+          Supporting women-led digital innovation in rural communities
+        </h2>
+      </div>
+    </Link>
           </article>
 
           {/* Right Column Cards */}
