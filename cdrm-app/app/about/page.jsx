@@ -13,27 +13,30 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="py-20 bg-purple-600">
-  <div className="flex px-8 md:px-30 items-center">
-    {/* Image Section */}
-    <div className="w-1/3 flex justify-center">
-      <figure>
-        <img
-          className="rounded-full object-cover w-48 h-48"
-          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-          alt="Movie"
-        />
-      </figure>
+      <div className="bg-fuchsia-400 py-5">
+  <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-8">
+    
+    {/* Image: hidden on mobile */}
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+      alt="Section"
+      className="hidden lg:block h-64 max-w-xs rounded-lg shadow-md"
+    />
+
+    <div>
+      <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+        Box Office News!
+      </h1>
+      <p className="text-base-content">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
     </div>
 
-    {/* Text Section */}
-    <div className="w-2/3">
-      <h2 className="text-center text-4xl text-white font-serif font-semibold">
-        Get closer to our latest research on critical issues by signing up to our range of email newsletters
-      </h2>
-    </div>
   </div>
-</section>
+</div>
+
+
 
       {/* ===== GLOBAL REACH ===== */}
       <section className="bg-gray-50 py-12">
