@@ -29,7 +29,7 @@ export default function HomePage() {
           {/* Large Feature Card */}
           <article className="lg:col-span-2 rounded-xl overflow-hidden border">
             <img
-              src="https://images.unsplash.com/photo-1581091870627-3f9c8a7f0c19"
+              src="https://i.ibb.co.com/5zDWdzB/Chat-GPT-Image-Jan-13-2026-11-39-44-AM.png"
               alt="Article"
               className="h-72 w-full object-cover"
             />

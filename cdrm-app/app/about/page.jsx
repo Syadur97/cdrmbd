@@ -18,7 +18,7 @@ export default function AboutPage() {
     
     {/* Image: hidden on mobile */}
     <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+      src="https://i.ibb.co.com/5zDWdzB/Chat-GPT-Image-Jan-13-2026-11-39-44-AM.png"
       alt="Section"
       className="hidden lg:block h-64 max-w-xs rounded-lg shadow-md"
     />
